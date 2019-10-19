@@ -27,11 +27,5 @@ function fuzzyMatch(drivers, input) {
 }
 
 function matchName(drivers, input) {
-
-};
-
-function getShortMessages(messages) {
-  return messages
-    .filter(function(obj) {
-      return obj.message.length <= 50;
-    })
+  return drivers.filter( driver => driver.name === input)
+}
