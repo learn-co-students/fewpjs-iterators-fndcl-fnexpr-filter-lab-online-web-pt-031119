@@ -6,6 +6,8 @@ function findMatching(drivers, string) {
   )
 }
 
+
+//By first letter
 function fuzzyMatch(drivers, string) {
   return drivers.filter( possibleMatch =>
     possibleMatch.toLowerCase().indexOf(string.toLowerCase()) === 0
